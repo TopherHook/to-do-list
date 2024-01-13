@@ -1,10 +1,10 @@
 
-
+/* adds an x mark for the close buttons on each line  */
 let myList = document.getElementsByTagName("li");
 let i;
 for (i = 0; i < myList.length; i++) {
     let span = document.createElement("span");
-    let text = document.createTextNode("\u00D7");
+    let text = document.createTextNode("\u2717");
     span.className = "close";
     span.appendChild(text);
     myList[i].appendChild(span);
@@ -31,7 +31,7 @@ function newTodo() {
     }
     document.getElementById("todoInput").value = "";
     let span = document.createElement("span");
-    let txt = document.createTextNode("\u00D7");
+    let txt = document.createTextNode("\u2717");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
@@ -44,7 +44,7 @@ function newTodo() {
     }
 }
 
-var list = document.querySelector('ul');
+let list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');

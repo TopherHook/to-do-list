@@ -1,7 +1,7 @@
 .container {
     box-sizing: border-box;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: white;
     border: 1px solid #ccc;
     width: 60%;
 }
@@ -32,7 +32,7 @@ ul li {
 }
 
 ul li.checked {
-    background: #888;
+    background: goldenrod;
     color: #fff;
     text-decoration: line-through;
 }
@@ -51,6 +51,8 @@ ul li.checked::before {
 }
 
 .close {
+    background-color: darkred;
+    color: white;
     position: absolute;
     right: 0;
     top: 0;
@@ -76,7 +78,6 @@ ul li.checked::before {
 
 .header input {
     margin: 0;
-    border: none;
     border-radius: 0;
     width: 50%;
     padding: 10px;
@@ -84,21 +85,11 @@ ul li.checked::before {
     font-size: 16px;
 }
 
-.header button {
-    /* float: left; */
-    width: 15%;
-    padding: 10px;
-    background: #ddd;
-    color: #555;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: darkseagreen;
+    color: white;
     /* float: left; */
     text-align: center;
     font-size: 16px;
@@ -108,7 +99,7 @@ ul li.checked::before {
   }
 
 .addBtn:hover {
-    background-color: #bbb;
+    background-color: green;
   }
 
   #todoList {
